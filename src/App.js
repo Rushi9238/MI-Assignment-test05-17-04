@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React, { createContext, useContext, useEffect, useState } from 'react'
 import './App.css';
+import Login from './Component/Pages/Login';
+import HomeGPS from './Component/Pages/HomeGPS';
+
+import { Route, Routes } from 'react-router-dom'
+
+
+export const GlobalData = createContext()
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false)
+  const [data , setdata]=useState([])
+  useEffect(()=>{
+    const fetchData=async()=>{
+        const api=await fetch('http://localhost:3001/users')
+        const res=await api.json()
+        setdata(res)
+    }
+    fetchData()
+  },[])
+  console.log(isLogin);
+  console.log(data);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalData.Provider value={{ isLogin, setIsLogin,data }}>
+        <div className="App">
+          <Routes>
+          <Route path='/' element={isLogin ? <HomeGPS/> : <Login/>} />
+          </Routes>
+        </div>
+      </GlobalData.Provider>
+    </>
   );
 }
 
