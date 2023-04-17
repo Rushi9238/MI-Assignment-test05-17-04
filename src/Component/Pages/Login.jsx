@@ -3,7 +3,7 @@ import '../../CSS_files/Login.css'
 import { GlobalData } from '../../App'
 
 const Login = () => {
-  const{isLogin,setIsLogin} =useContext(GlobalData);
+  const{setIsLogin} =useContext(GlobalData);
 
   const handelLogIn=()=>{
     setIsLogin(true)
@@ -20,7 +20,7 @@ const Login = () => {
         </div>
         <div className="password">
             <label>Password</label>
-            <input type="text" name="" id="" />
+            <input type="password" name="" id="" />
 
         </div>
         <button onClick={handelLogIn}>LogIn</button>

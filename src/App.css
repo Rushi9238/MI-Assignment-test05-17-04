@@ -1,6 +1,11 @@
 .App{
     height: 100vh;
     width: 100%;
-    border: 2px solid red;
+    border: 0.1px solid black;
+    background-color:rgba(0, 0, 0, 0.726);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+.App h1, h2{
+    color: white;
 }
