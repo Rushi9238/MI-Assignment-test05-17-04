@@ -75,3 +75,143 @@ a {
     list-style-type: none;
     color: black;
 }
+@media only screen and (min-width:950px) and (max-width:1325px){
+    .home{
+        /* background-color: aqua; */
+        height: 80%;
+        width: 90%;
+       
+    }
+    .home .input-box{
+        width: 40%;
+    }
+    .nextpage{
+        /* background-color: aqua; */
+        height: 80%;
+        width: 65%;
+    }
+}
+@media only screen and (min-width:743px) and (max-width:950px){
+    .home{
+        /* background-color: aqua; */
+        height: 80%;
+        width: 90%;
+        margin: 3rem 2rem;
+    }
+    .home .input-box{
+        width: 40%;
+    }
+    .nextpage{
+        /* background-color: aqua; */
+        height: 80%;
+        width: 65%;
+    }
+}
+@media only screen and (min-width:520px) and (max-width:744px){
+    .home{
+        /* background-color: aqua; */
+        height: 80%;
+        width: 90%;
+        margin: 1rem 2rem;
+    }
+    .home .input-box{
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    .nextpage{
+        /* background-color: aqua; */
+        height: 80%;
+        width: 75%;
+    }
+    
+    tbody tr th {
+       
+        padding: .4rem;
+        font-size: 1rem;
+        
+    }
+    tbody tr:nth-child(odd) {
+        font-size: 1rem;
+    
+    }
+    
+    tbody tr:nth-child(even) {
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (min-width:370px) and (max-width:520px){
+    .home{
+        background-color: aqua;
+        height: 80%;
+        width: 95%;
+        margin: 1rem 1rem;
+        padding-left: 1rem;
+    }
+    .home .input-box{
+        width: 60%;
+        font-size: 1rem;
+        height: 8%;
+    }
+    .nextpage{
+        background-color: aqua;
+        height: 65%;
+        width: 85%;
+        margin: 1rem 1rem;
+    }
+    
+    tbody tr th {
+       
+        padding: .4rem;
+        font-size: .8rem;
+        
+    }
+    tbody tr:nth-child(odd) {
+        font-size: .8rem;
+    
+    }
+    
+    tbody tr:nth-child(even) {
+        font-size: .8rem;
+    }
+}
+@media only screen and (min-width:280px) and (max-width:370px){
+    .home{
+        background-color: aqua;
+        height: 80%;
+        width: 100%;
+        margin: 0;
+        padding-left: .5rem;
+    }
+    .home .input-box{
+        width: 60%;
+        font-size: 1rem;
+        height: 8%;
+    }
+    .nextpage{
+        background-color: aqua;
+        height: 65%;
+        width: 85%;
+        margin: .5rem .5rem;
+        padding-left: 1rem;
+    }
+    
+    tbody tr th {
+       
+        padding: .4rem;
+        font-size: .7rem;
+        
+    }
+    tbody tr:nth-child(odd) {
+        font-size: .7rem;
+    
+    }
+    
+    tbody tr:nth-child(even) {
+        font-size: .7rem;
+    }
+    .nextpage .tabel-div {
+        width: 90%;
+        height: 70%;
+    }
+}

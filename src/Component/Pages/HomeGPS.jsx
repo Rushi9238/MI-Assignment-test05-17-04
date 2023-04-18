@@ -30,7 +30,7 @@ const HomeGPS = () => {
     <div className='home'>
       <h1>GPS summary</h1>
       <input type="text" className="input-box" id="" placeholder='Search DeviceId/type ' />
-      <table style={{ width: '100%',height:'70%' }}>
+      <table className='home-table' style={{ width: '100%',height:'70%' }}>
         <tbody >
           <tr>
             <th>DeviceId</th>

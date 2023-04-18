@@ -1,4 +1,4 @@
-.login-div{
+.login-div {
     /* border: 2px solid green; */
     width: 100%;
     height: 100%;
@@ -7,7 +7,8 @@
     justify-content: center;
     align-items: center;
 }
-.login-div .ld-container{
+
+.login-div .ld-container {
     border: 1px solid black;
     height: 45%;
     width: 35%;
@@ -19,7 +20,9 @@
     border-radius: 20px;
 
 }
-.login-div .ld-container .username, .password{
+
+.login-div .ld-container .username,
+.password {
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
@@ -27,7 +30,8 @@
     width: 60%;
 
 }
-.login-div .ld-container input{
+
+.login-div .ld-container input {
     height: 60%;
     cursor: pointer;
     border-radius: 50px;
@@ -36,10 +40,12 @@
     padding-left: 1rem;
     font-size: 1.3rem;
 }
-.login-div .ld-container label{
+
+.login-div .ld-container label {
     font-size: 1.3rem;
 }
-.login-div .ld-container button{
+
+.login-div .ld-container button {
     height: 15%;
     width: 60%;
     font-size: 1.4rem;
@@ -49,15 +55,124 @@
     outline: none;
     border: none;
 }
+
 input[type=text]:focus {
     /* background-color: lightblue; */
     border: 2px solid #d83f55;
-  }
-  input[type=password]:focus {
+}
+
+input[type=password]:focus {
     /* background-color: lightblue; */
     border: 2px solid #d83f55;
-  }
- p:hover{
+}
+
+p:hover {
     color: white;
     cursor: pointer;
+}
+
+
+/* *************************************** */
+@media only screen and (min-width:950px) and (max-width:1325px) {
+
+    .login-div .ld-container {
+        height: 70%;
+        width: 55%;
+    }
+
+    .login-div .ld-container input {
+        height: 50%;
+    }
+
+    .login-div .ld-container button {
+        height: 15%;
+    }
+}
+
+@media only screen and (min-width:743px) and (max-width:950px) {
+
+    .login-div .ld-container {
+        height: 70%;
+        width: 65%;
+    }
+
+    .login-div .ld-container input {
+        height: 50%;
+    }
+
+    .login-div .ld-container button {
+        height: 15%;
+    }
+}
+
+@media only screen and (min-width:520px) and (max-width:744px) {
+
+    .login-div .ld-container {
+        height: 60%;
+        width: 75%;
+    }
+
+    .login-div .ld-container input {
+        height: 50%;
+    }
+
+    .login-div .ld-container button {
+        height: 15%;
+    }
+}
+
+@media only screen and (min-width:370px) and (max-width:520px) {
+
+
+    .login-div .ld-container .username,
+    .password {
+        /* border: 2px solid red; */
+        height: 25%;
+        width: 80%;
+    }
+
+    .login-div .ld-container {
+        height: 55%;
+        width: 75%;
+    }
+
+    .login-div .ld-container input {
+        height: 50%;
+        /* width: 130%; */
+        font-size: 1.2rem;
+    }
+
+    .login-div .ld-container button {
+        height: 13%;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:370px) {
+    .login-div {
+        background-color: aquamarine;
+    }
+
+    .login-div .ld-container .username,
+    .password {
+        /* border: 2px solid red; */
+        height: 25%;
+        width: 90%;
+    }
+
+    .login-div .ld-container {
+        height: 55%;
+        width: 89%;
+    }
+
+    .login-div .ld-container input {
+        height: 50%;
+        /* width: 130%; */
+        font-size: 1.2rem;
+    }
+
+    .login-div .ld-container button {
+        height: 13%;
+        width: 80%;
+    }
 }
