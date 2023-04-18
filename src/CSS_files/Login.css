@@ -149,9 +149,7 @@ p:hover {
 }
 
 @media only screen and (min-width:280px) and (max-width:370px) {
-    .login-div {
-        background-color: aquamarine;
-    }
+   
 
     .login-div .ld-container .username,
     .password {
