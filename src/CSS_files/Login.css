@@ -33,6 +33,8 @@
     border-radius: 50px;
     outline: none;
     border: none;
+    padding-left: 1rem;
+    font-size: 1.3rem;
 }
 .login-div .ld-container label{
     font-size: 1.3rem;
@@ -44,6 +46,8 @@
     cursor: pointer;
     border-radius: 50px;
     background-color: #d83f55;
+    outline: none;
+    border: none;
 }
 input[type=text]:focus {
     /* background-color: lightblue; */

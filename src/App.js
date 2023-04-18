@@ -6,7 +6,6 @@ import HomeGPS from './Component/Pages/HomeGPS';
 import { Route, Routes } from 'react-router-dom'
 import NextPage from './Component/Pages/NextPage';
 
-
 export const GlobalData = createContext()
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
   // const [data , setdata]=useState([])
   // useEffect(()=>{
   //   const fetchData=async()=>{
-  //       const api=await fetch('http://localhost:3001/users')
+  //       const api=await fetch('http://localhost:3001/posts')
   //       const res=await api.json()
   //       setdata(res)
   //   }

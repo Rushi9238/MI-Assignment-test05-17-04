@@ -1,10 +1,13 @@
 import React from 'react'
+// import { GlobalData } from '../../App'
 import { useParams } from 'react-router-dom'
 import '../../CSS_files/HomeGPS.css'
 import { data } from '../Const-Files/data'
 
 const NextPage = () => {
     const {id}=useParams()
+  // const{data}=useContext(GlobalData)
+
     // console.log(id);
     const heading=data.find((ele)=>{
         return ele.DeviceId===id

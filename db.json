@@ -1,6 +1,5 @@
 {
-  
-  "users": [
+  "posts": [
     {
       "id":1,
       "DeviceId": "D-1567",
@@ -120,6 +119,15 @@
       "Timestamp": "31-08-2022 10:35",
       "location": "L6"
     }
-
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
